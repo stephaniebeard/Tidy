@@ -6,10 +6,16 @@ Purpose: To create a tidy data set from UCI HAR data
 https://www.dropbox.com/s/lfsbhwy8elgjo15/UCI_HAR_Dataset.zip?dl=0
 
 Script does the following:
-  * Merges training and testing data into one data set
-  * Extracts only mean and standard deviation
-  * Uses descriptive activity to name activities
-  * Labels columns with descriptive variable names
-  * Creates a new independent tiday data set with avg for each variable for each activity and subject
+1. Merges training and testing data into one data set
+2. Extracts only mean and standard deviation
+3. Uses descriptive names to name activities
+4. Labels columns with descriptive variable names
+5. Creates a new independent tiday data set with avg for each variable for each activity and subject
   
-  
+To run script in R:
+* Download data set and store in a working directory called "UCI HAR Dataset"
+* Set the working directory to ~UCI HAR Dataset/
+* Load the data.table package.
+* Run run_analysis.r
+
+For more information on the Human Activity Recognition Using Smartphones Dataset see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
