@@ -4,8 +4,6 @@
 
 library(dplyr)
 
-#https://www.dropbox.com/s/lfsbhwy8elgjo15/UCI_HAR_Dataset.zip?dl=0
-setwd("/Users/stephaniebeard/Desktop/MSDA/Tools & Techniques")
 
 # download and extract the data 
 if( !dir.exists("UCI HAR Dataset") ) {
