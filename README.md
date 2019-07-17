@@ -2,7 +2,8 @@
 ---
 Created: 16 July 2019 by Stephanie Beard
 
-Purpose: To create a tidy data set from UCI HAR data
+Purpose:
+To create a tidy data set from UCI HAR data
 https://www.dropbox.com/s/lfsbhwy8elgjo15/UCI_HAR_Dataset.zip?dl=0
 
 Script does the following:
