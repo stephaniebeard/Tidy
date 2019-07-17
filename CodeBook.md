@@ -1,5 +1,5 @@
 
-#CodeBook
+# CodeBook
 
 An experiment was conducted on 30 subjects ages 19-48. The subjects performed 6 different activites while wearing a smartphone. 
 Data was collected using the smartphone's embedded accelerometer and gyroscope. 3-axial linear acceleration and 3-axial angular velocity 
@@ -30,4 +30,4 @@ Important to note:
 - Features are normalized (between -1,1)
 - Each feature vector is a row on the text file.
 
-
+For more information on the Human Activity Recognition Using Smartphones Dataset see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
