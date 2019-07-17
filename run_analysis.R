@@ -1,8 +1,15 @@
 
 # You should create one script called that does the following.
 # 1.Merges the training and the test sets to create one data set.
+# 2.Extracts only the measurements on the mean and standard deviation for each measurement.
+# 3.Uses descriptive activity names to name the activities in the data set
+# 4.Appropriately labels the data set with descriptive variable names.
+# 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+
+#import libraries
 library(dplyr)
+ 
 
 
 # download and extract the data 
@@ -13,7 +20,7 @@ if( !dir.exists("UCI HAR Dataset") ) {
   unzip("UCI HAR Dataset.zip")
 }
 
-#We read all the tables from the directory into data frames.
+#read tables into dataframe
 
 X_train <- read.table(file = "./UCI HAR Dataset/train/X_train.txt")
 X_test <- read.table(file = "./UCI HAR Dataset/test/X_test.txt")
@@ -27,6 +34,8 @@ subject_test <- read.table(file = "./UCI HAR Dataset/test/subject_test.txt")
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 features        <- read.table("./UCI HAR Dataset/features.txt")
 
+# 1.Merges the training and the test sets to create one data set.
+
 #merge test, training, and subject data
 x <- rbind(X_train, X_test)
 y <- rbind(y_train, y_test)
@@ -39,7 +48,7 @@ xy <- cbind(y,x)
 merged <- cbind(subject, xy)
 
 
-#uses the features data to define column names for full datasets
+#uses the features data to define column names for merged dataset
 names(merged) <- c("SubjectID", "ActivityName", as.character(features$V2))
 
 
