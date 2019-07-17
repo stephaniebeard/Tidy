@@ -14,9 +14,9 @@ Script does the following:
 5. Creates a new independent tiday data set with avg for each variable for each activity and subject
   
 To run script in R:
-* Download data set and store in a working directory called "UCI HAR Dataset"
+* Download data set and store in working directory 
 * Set the working directory to ~UCI HAR Dataset/
-* Load the data.table package.
-* Run run_analysis.r
+* Load the tidyr package
+* Run run_analysis.R
 
 For more information on the Human Activity Recognition Using Smartphones Dataset see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
