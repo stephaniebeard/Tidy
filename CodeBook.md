@@ -1,3 +1,6 @@
+
+#CodeBook
+
 An experiment was conducted on 30 subjects ages 19-48. The subjects performed 6 different activites while wearing a smartphone. 
 Data was collected using the smartphone's embedded accelerometer and gyroscope. 3-axial linear acceleration and 3-axial angular velocity 
 was captured at a constant rate of 50Hz.
@@ -23,10 +26,8 @@ THE DATASET INCLUDES THE FOLLOWING FILES:
 - 'TRAIN/INERTIAL SIGNALS'
 - 'TEST/INTERTIAL SIGNALS'
 
-Notes: 
-======
-- Features are normalized and bounded within [-1,1].
+Important to note:
+- Features are normalized (between -1,1)
 - Each feature vector is a row on the text file.
 
-For more information about this dataset contact: activityrecognition@smartlab.ws
 
